@@ -67,3 +67,20 @@ public static int lengthOfLastWord(String s) {
        return counter;
     }
 ```
+```ruby
+private static int sum(int a , int b){
+        int sumNumber = a - b ;
+        if(sumNumber < 0){
+            return sumNumber*-1;
+        }
+        return sumNumber;
+        
+    }
+    public static int scoreOfString(String s) {
+        int sum = 0 ;
+        for (int i = 0; i < s.length()-1; i++) {
+            sum += sum(s.charAt(i) ,s.charAt(i+1));
+        }
+        return sum;
+    }
+```
